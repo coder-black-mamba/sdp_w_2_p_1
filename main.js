@@ -106,3 +106,29 @@ function divisor_1_50(){
 }
 
 // divisor_1_50();
+
+const friends = ["rahim", "karim", "abdul", "sadsd", "heroAlom","SayedIsAVeryGoodBoy"];
+
+let biggest_name=friends[0];
+friends.forEach(friend=>{
+    if(biggest_name.length<friend.length){
+        biggest_name=friend;
+    }
+})
+
+// console.log(biggest_name);
+const numbers = [1, 2, 3, 3, 4, 4, 5, 6, 7, 8, 9, 10];
+const unique_numbers=new Set(numbers);
+// console.log(Array.from(unique_numbers));
+
+function find_highest_from_arr(arr){
+    let highest = arr[0];
+    arr.forEach(el=>{
+        if(el>highest){
+            highest=el;
+        }
+    })
+    return highest;
+}
+
+// console.log(find_highest_from_arr(numbers));
